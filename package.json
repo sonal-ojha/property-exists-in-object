@@ -1,0 +1,25 @@
+{
+  "name": "property-exists-in-object",
+  "version": "1.0.0",
+  "description": "verify if a property provided is available by traversing through nested levels of an object. ",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonal-ojha/property-exists-in-object.git"
+  },
+  "keywords": [
+    "property",
+    "exists",
+    "in",
+    "object"
+  ],
+  "author": "Sonal Ojha <sonalsonu51@gmail.com> (https://www.linkedin.com/in/sonal-ojha-99b02785/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sonal-ojha/property-exists-in-object/issues"
+  },
+  "homepage": "https://github.com/sonal-ojha/property-exists-in-object#readme"
+}
