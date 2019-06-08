@@ -1,6 +1,6 @@
 {
   "name": "property-exists-in-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "verify if a property provided is available by traversing through nested levels of an object. ",
   "main": "src/index.js",
   "scripts": {
