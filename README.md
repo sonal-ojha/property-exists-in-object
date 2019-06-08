@@ -1,21 +1,20 @@
-# property-exists-in-object
+### property-exists-in-object
 
-A small, yet very useful npm package, which is used to check if an object containes a property/not by traversing through nested level.
+A small, yet very useful npm package, which is used to check if an object possess a property/not at any depth of nested objects.
 
-If the object has the property, it will return the value otherwise 'null'.
+  - If the object has the property, it will return the value else returns 'null'
 
-# Installation
+### Installation
 
-npm install property-exists-in-object
+```sh
+$ npm i property-exists-in-object
+```
 
-or 
+### How to Use
 
-npm i property-exists-in-object
+Install and import property-exists-in-object 
 
-# Usecase
-
-import property-exists-in-object in the file you need to use.
-
+```sh
 import propertyExistsInObject from 'property-exists-in-object';
 
 const testObject = {
@@ -31,12 +30,32 @@ const testObject = {
         }
     }
 }
+```
 
-propertyExistsInObject is a function which takes 2 parameters:
+isObjProps is a function which takes 2 arguements:
+  - Arguement 1 - Type: Object - The Object to be traversed to find the property in it.
+  - Arguement 2 - Type: Array - Array of Property names. The length of the array denotes the depth of the property in nested object.
+    
+##### The examples will make you understand better
 
-Parameter 1 - Type: Object - The Object to be traversed to find the property in it.
-Parameter 2 - Type: Array - Array of Property names. The length of the array denotes the depth of the property in nested object.
+##
 
-console.log(propertyExistsInObject(testObject, ["name"]));  // returns 'Sonal'
+```sh
+console.log(propertyExistsInObject(testObject, ["name"]));
+//Sonal
 
-console.log(propertyExistsInObject(testObject, ["FullName"]));  // returns 'null'
+console.log(propertyExistsInObject(testObject, ["city"]));
+//Bangalore
+
+console.log(propertyExistsInObject(testObject, ["hobbies","hobby1"]));
+//travelling
+
+console.log(propertyExistsInObject(testObject, ["gender"]));
+//null
+
+console.log(propertyExistsInObject(testObject, ["hobbies","hobby2","subHobby1"]));
+//reading novels
+
+console.log(propertyExistsInObject(testObject, ["hobbies","hobby1","subHobby1"]));
+//null
+```
